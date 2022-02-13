@@ -5,12 +5,9 @@ ul {
 li:first-letter {
   text-transform: capitalize;
 }
-a {
-  text-decoration: none;
-}
 
 .wrapper {
-  max-width: 642px;
+  max-width: 656px;
   margin: 30px auto;
 }
 .weatherapp {
@@ -44,10 +41,6 @@ a {
   color: rgb(112, 117, 122);
 }
 
-#temperature-sign strong {
-  color: rgb(32, 33, 36);
-}
-
 .one {
   color: rgb(112, 117, 122);
   font-size: 12px;
@@ -69,4 +62,18 @@ a {
   height: 26px;
   line-height: 26px;
   width: 326px;
+}
+
+.display-temperature a {
+  text-decoration: none;
+}
+
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  color: black;
+  cursor: default;
 }
