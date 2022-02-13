@@ -12,35 +12,42 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="wrapper">
         <div class="weatherapp">
-          <div class="main-weather">
-            <div class="row">
-              <div class="col-6">
+          <div class="row">
+            <div class="col-6">
+              <div class="display-temperature">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
                   alt="cloudy skies image
             "
                 />
-                <span> <strong> 4°C</strong> |°F</span>
-                <ul>
-                  <li>Precipitation: 20%</li>
-                  <li>Humidity: 80%</li>
-                  <li>Wind: 23km/h</li>
-                </ul>
+                <span class="main-temperature">
+                  <strong id="temperature"></strong>
+                  <span id="temperature-sign">
+                    <strong>°C</strong> |
+                    <a href="#" alt="convert to fahrenheit"> °F</a>
+                  </span>
+                  <ul class="one">
+                    <li id="humidity"></li>
+                    <li id="wind">Wind: 23km/h</li>
+                  </ul>
+                </span>
               </div>
-              <div class="col-6">
-                <ul>
-                  <li>
-                    <strong>Mississauga, ON L5L 3G9</strong>
-                  </li>
-                  <li>Wednesday</li>
-                  <li>Cloudy</li>
-                </ul>
-              </div>
+            </div>
+
+            <div class="col-6">
+              <ul class="two">
+                <li>
+                  <strong id="city"></strong>
+                </li>
+                <li>Wednesday</li>
+                <li id="description">Cloudy</li>
+              </ul>
             </div>
           </div>
           <span>
