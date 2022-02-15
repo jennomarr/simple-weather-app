@@ -10,6 +10,9 @@ li:first-letter {
   max-width: 656px;
   margin: 30px auto;
 }
+.wrapper a {
+  text-decoration: none;
+}
 .weatherapp {
   padding: 20px;
   border: 1px solid #dadde1;
@@ -64,10 +67,6 @@ li:first-letter {
   width: 326px;
 }
 
-.display-temperature a {
-  text-decoration: none;
-}
-
 .active {
   color: black;
   cursor: default;
@@ -76,4 +75,23 @@ li:first-letter {
 .active:hover {
   color: black;
   cursor: default;
+}
+
+.weather-forcast {
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+}
+
+.weather-forcast-date {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.weather-forcast-min {
+  opacity: 0.6;
+}
+
+.weather-forcast-temperature {
+  font-size: 13px;
 }
