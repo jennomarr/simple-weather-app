@@ -17,7 +17,7 @@ li:first-letter {
 }
 
 .wrapper {
-  max-width: 656px;
+  max-width: 646px;
   margin: 30px auto;
 }
 .wrapper a {
@@ -93,17 +93,17 @@ li:first-letter {
 
 .weather-forecast {
   margin-top: 20px;
-  align-items: center;
   color: black;
 }
 
 .weather-forecast-date {
+  font-display: center;
   font-size: 13px;
   font-weight: bolder;
   color: black;
-
   padding: 12px 0px 7px 9px;
 }
+
 
 .weather-forecast-min {
   opacity: 0.6;
