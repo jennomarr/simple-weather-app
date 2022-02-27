@@ -62,11 +62,9 @@ li:first-letter {
 
 #temperature-sign {
   display: inline-block;
-  font-size: 16px;
+  font-size: 48px;
   line-height: 24px;
-  margin-top: 6px;
-  vertical-align: top;
-  color: #3b3e8a;
+  color: black;
 }
 
 .main-city strong {
@@ -86,11 +84,6 @@ li:first-letter {
   cursor: default;
 }
 
-.active:hover {
-  color: black;
-  cursor: default;
-}
-
 .weather-forecast {
   margin-top: 20px;
   color: black;
@@ -101,9 +94,8 @@ li:first-letter {
   font-size: 13px;
   font-weight: bolder;
   color: black;
-  padding: 12px 0px 7px 9px;
+  padding: 12px 0px 7px 20px;
 }
-
 
 .weather-forecast-min {
   opacity: 0.6;
@@ -112,4 +104,5 @@ li:first-letter {
 .weather-forecast-temperature {
   font-size: 13px;
   color: black;
+  padding: 3px 0px 7px 10px;
 }
