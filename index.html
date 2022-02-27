@@ -40,47 +40,51 @@
               </div>
             </form>
             <div class="row">
-              <div class="col-6">
+              <div class="col-sm-6">
                 <div class="display-temperature">
-                  <img src="#" alt="weather icon" id="icon" />
-                  <span class="main-temperature">
-                    <strong id="temperature"></strong>
-                    <span id="temperature-sign">
-                      <strong>
-                        <a
-                          href="#"
-                          alt="convert to celsius"
-                          id="celsius-link"
-                          class="active"
-                        >
-                          °C</a
-                        ></strong
-                      >
-                      |
-                      <a
-                        href="#"
-                        alt="convert to fahrenheit"
-                        id="fahrenheit-link"
-                      >
-                        °F</a
-                      >
-                    </span>
-                    <ul class="one">
-                      <li>Humidity: <span id="humidity"></span>%</li>
-                      <li>Wind: <span id="wind"></span>km/h</li>
-                    </ul>
-                  </span>
+                  <div class="main-city">
+                    <strong id="city"></strong>
+                  </div>
+                  <div>
+                    <span id="date"> </span>,
+                    <span id="description">Cloudy</span>
+                    <div>
+                      <span class="small-description">
+                        Humidity: <span id="humidity"></span>%
+                      </span>
+                      <span class="small-description">
+                        Wind: <span id="wind"></span>km/h
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              <div class="col-6">
-                <ul class="two">
-                  <li>Last updated: <span id="date"> </span></li>
-                  <li>
-                    <strong id="city"></strong>
-                  </li>
-                  <li id="description">Cloudy</li>
-                </ul>
+              <div class="col-sm-6">
+                <div class="main-temperature">
+                  <img src="#" alt="weather icon" id="icon" />
+                  <strong id="temperature"></strong>
+                  <span id="temperature-sign">
+                    <strong>
+                      <a
+                        href="#"
+                        alt="convert to celsius"
+                        id="celsius-link"
+                        class="active"
+                      >
+                        °C</a
+                      ></strong
+                    >
+                    |
+                    <a
+                      href="#"
+                      alt="convert to fahrenheit"
+                      id="fahrenheit-link"
+                    >
+                      °F</a
+                    >
+                  </span>
+                </div>
               </div>
             </div>
             <div class="weather-forcast" id="forecast"></div>
