@@ -15,86 +15,85 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="wrapper">
-        <div class="weatherapp">
-          <form id="search-form" class="mb-3">
+    <div class="background">
+      <div class="container">
+        <div class="wrapper">
+          <div class="weatherapp">
+            <form id="search-form" class="mb-3">
+              <div class="row">
+                <div class="col-10">
+                  <input
+                    type="text"
+                    placeholder="Type a city..."
+                    class="form-control"
+                    id="city-input"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-2">
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="btn btn-primary w-100"
+                  />
+                </div>
+              </div>
+            </form>
             <div class="row">
-              <div class="col-10">
-                <input
-                  type="text"
-                  placeholder="Type a city..."
-                  class="form-control"
-                  id="city-input"
-                  autocomplete="off"
-                />
-              </div>
-              <div class="col-2">
-                <input
-                  type="submit"
-                  value="Search"
-                  class="btn btn-primary w-100"
-                />
-              </div>
-            </div>
-          </form>
-          <div class="row">
-            <div class="col-6">
-              <div class="display-temperature">
-                <img src="#" alt="weather icon" id="icon" />
-                <span class="main-temperature">
-                  <strong id="temperature"></strong>
-                  <span id="temperature-sign">
-                    <strong>
+              <div class="col-6">
+                <div class="display-temperature">
+                  <img src="#" alt="weather icon" id="icon" />
+                  <span class="main-temperature">
+                    <strong id="temperature"></strong>
+                    <span id="temperature-sign">
+                      <strong>
+                        <a
+                          href="#"
+                          alt="convert to celsius"
+                          id="celsius-link"
+                          class="active"
+                        >
+                          °C</a
+                        ></strong
+                      >
+                      |
                       <a
                         href="#"
-                        alt="convert to celsius"
-                        id="celsius-link"
-                        class="active"
+                        alt="convert to fahrenheit"
+                        id="fahrenheit-link"
                       >
-                        °C</a
-                      ></strong
-                    >
-                    |
-                    <a
-                      href="#"
-                      alt="convert to fahrenheit"
-                      id="fahrenheit-link"
-                    >
-                      °F</a
-                    >
+                        °F</a
+                      >
+                    </span>
+                    <ul class="one">
+                      <li>Humidity: <span id="humidity"></span>%</li>
+                      <li>Wind: <span id="wind"></span>km/h</li>
+                    </ul>
                   </span>
-                  <ul class="one">
-                    <li>Humidity: <span id="humidity"></span>%</li>
-                    <li>Wind: <span id="wind"></span>km/h</li>
-                  </ul>
-                </span>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <ul class="two">
+                  <li>Last updated: <span id="date"> </span></li>
+                  <li>
+                    <strong id="city"></strong>
+                  </li>
+                  <li id="description">Cloudy</li>
+                </ul>
               </div>
             </div>
-
-            <div class="col-6">
-              <ul class="two">
-                <li>Last updated: <span id="date"> </span></li>
-                <li>
-                  <strong id="city"></strong>
-                </li>
-                <li id="description">Cloudy</li>
-              </ul>
-            </div>
+            <div class="weather-forcast" id="forecast"></div>
           </div>
-          <div class="weather-forcast" id="forecast">
-            
-          </div>
-        </div>
-        <small>
-          <a href="https://github.com/jennomarr/simple-weather-app">
-            Open-source</a
+          <small>
+            <a href="https://github.com/jennomarr/simple-weather-app">
+              Open-source</a
+            >
+            code by jennomar</small
           >
-          code by jennomar</small
-        >
+        </div>
       </div>
     </div>
   </body>
   <script src="src/app.js"></script>
 </html>
-
